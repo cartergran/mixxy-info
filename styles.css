@@ -1,0 +1,58 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0D0F14;
+  color: #FFFFFF;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+
+.container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+/* Nav */
+nav { border-bottom: 1px solid #2A2D3E; padding: 20px 0; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { font-size: 20px; font-weight: 700; letter-spacing: -0.4px; }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a { color: #7A8190; font-size: 14px; font-weight: 500; transition: color 0.15s; }
+.nav-links a:hover { color: #FFFFFF; }
+
+/* Footer */
+footer { border-top: 1px solid #2A2D3E; padding: 28px 0; margin-top: auto; }
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-copy { font-size: 13px; color: #7A8190; }
+.footer-links { display: flex; gap: 20px; }
+.footer-links a { font-size: 13px; color: #7A8190; transition: color 0.15s; }
+.footer-links a:hover { color: #FFFFFF; }
+
+/* Prose pages (support, privacy) */
+.prose-page { padding: 72px 0 100px; }
+.prose-page h1 { font-size: 36px; font-weight: 700; letter-spacing: -0.6px; margin-bottom: 8px; }
+.prose-page .page-meta { font-size: 14px; color: #7A8190; margin-bottom: 56px; }
+.prose-section { max-width: 680px; }
+.prose-section + .prose-section { margin-top: 48px; }
+.prose-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #FFFFFF;
+}
+.prose-section p { font-size: 15px; color: #B0B6C3; line-height: 1.75; margin-bottom: 14px; }
+.prose-section p:last-child { margin-bottom: 0; }
+.prose-section ul { padding-left: 20px; margin-bottom: 14px; }
+.prose-section ul li { font-size: 15px; color: #B0B6C3; line-height: 1.75; margin-bottom: 6px; }
+.prose-section a { color: #E8372A; text-decoration: underline; text-underline-offset: 3px; }
+.prose-section a:hover { color: #FF5545; }
+
+@media (max-width: 600px) {
+  .prose-page h1 { font-size: 28px; }
+  .nav-links { gap: 18px; }
+}
