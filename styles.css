@@ -64,7 +64,7 @@ nav {
   display: block;
 }
 .nav-watermark-accent {
-  color: #e8372a;
+  color: #2f6bff;
 }
 .nav-links {
   display: flex;
@@ -177,7 +177,7 @@ footer {
   margin-bottom: 6px;
 }
 .prose-section a {
-  color: #e8372a;
+  color: #2f6bff;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
